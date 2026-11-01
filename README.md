@@ -42,12 +42,20 @@ Les données proviennent du jeu de données open data du Ministère de l'Enseign
 - Requêtes préparées (protection contre l'injection SQL), échappement des sorties avec `htmlspecialchars()`, conversion des identifiants en entiers.
 - Interface responsive avec variables CSS.
 
+## Modèle conceptuel de données
+
+![MCD](docs/mcd.png)
+
+Un établissement est situé dans une région et propose des diplômes. Chaque diplôme relève d'une discipline et possède des résultats d'insertion (`RESULTAT_IP`), chacun rattaché à une année et un délai d'enquête (18 ou 30 mois).
+
 ## Structure du dépôt
 
 ```
 .
 ├── css/style.css
-├── docs/rapport.pdf           Rapport complet du projet
+├── docs/
+│   ├── rapport.pdf            Rapport complet du projet
+│   └── mcd.png                Modèle conceptuel de données
 ├── sql/
 │   ├── creation.sql           Création de la base et des tables
 │   └── insertion.sql          Jeu de données de démonstration
