@@ -44,7 +44,7 @@ Les données proviennent du jeu de données open data du Ministère de l'Enseign
 
 ## Modèle conceptuel de données
 
-![MCD](docs/mcd.png)
+![MCD](docs/MCD.png)
 
 Un établissement est situé dans une région et propose des diplômes. Chaque diplôme relève d'une discipline et possède des résultats d'insertion (`RESULTAT_IP`), chacun rattaché à une année et un délai d'enquête (18 ou 30 mois).
 
